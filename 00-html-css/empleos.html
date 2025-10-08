@@ -5,26 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevJobs - Oferta</title>
     <link rel="stylesheet" href="./style.css">
+
+    <script type="module" src="./script.js">
+
+    </script>
   </head>
   <body>
     <header>
-      <h2>
         <h2> 
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#4397fe"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-loom"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.464 6.518a6 6 0 1 0 -3.023 7.965" /><path d="M17.482 17.464a6 6 0 1 0 -7.965 -3.023" /><path d="M6.54 17.482a6 6 0 1 0 3.024 -7.965" /><path d="M6.518 6.54a6 6 0 1 0 7.965 3.024" /></svg>
             DevJobs
         </h2>
-        DevJobs
-      </h2>
-      <nav>
-        <a href="index.html">Inicio</a>
-        <a href="empleos.html">Empleos</a>
-        <a href="">Empresas</a>
-        <a href="">Salarios</a>
-      </nav>
-      <div>
-        <a href="">Publicar empleo</a>
-        <a href="">Iniciar sesion</a>
-      </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="empleos.html">Empleos</a>
+            <a href="">Empresas</a>
+            <a href="">Salarios</a>
+        </nav>
+        <div>
+            <a href="">Publicar empleo</a>
+            <a href="">Iniciar sesion</a>
+        </div>
     </header>
+
+    <main>
+      <section class="job-search">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="200" alt="">
+            <h1>Encuentra el trabajo de tus sueños</h1>
+            <p>Únete a la comunidad más grande de desarrolladores y encuentra tu próxima oportunidad.</p>
+
+            <form role="search">
+            </form>
+      </section>
+
+      <section>
+        <nav class="pagination">
+          <a href="#"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg></a>
+          <a class="is-active" href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg></a>
+        </nav>
+      </section>
+
+      <button id="boton-importante">Aplicar</button>
+    </main>
+
+    <footer>
+      <small> <strong>&copy; Bryan Lopez - Development </strong> - Searching for the One Piece... and fixing bugs on the way.</small>
+    </footer>
   </body>
 </html>
