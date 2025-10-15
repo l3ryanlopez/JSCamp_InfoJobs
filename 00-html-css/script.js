@@ -35,7 +35,28 @@ jobsListingSection.addEventListener('click', function(event) {
 })
 
 const filter = document.querySelector('#filter-technology')
+var mensaje = document.querySelector('#value-filter')
+var jobs = document.querySelectorAll('.job-listing-card')
 
 filter.addEventListener('change', function () {
-  console.log(filter.value)
+  const selectValue = filter.value
+
+  if (selectValue) {
+    mensaje.textContent = 'Ha seleccionado: '+ selectValue
+  }else{
+    mensaje.textContent = ''
+  }
+  // console.log(jobs)
+  jobs.forEach(job => {
+    const modalidad = job.dataset.modalidad
+    console.log(modalidad)
+    console.log(job)
+
+    if (modalidad === '' || selectValue == modalidad) {
+      job.style.display = 'flex'
+    } else {
+      job.style.display = 'none'
+    }
+    
+  });
 })
